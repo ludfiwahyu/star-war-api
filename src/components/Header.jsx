@@ -3,7 +3,7 @@ import { Navbar, Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const homeBtn = (payload) => {
     navigate(`/`);
@@ -11,8 +11,7 @@ const Header = () => {
   return (
     <Navbar bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand onClick={homeBtn}>
-          
+        <Navbar.Brand href="" onClick={homeBtn}>
           <img
             alt=""
             src={require("../assets/icons8-star-wars-48.png")}

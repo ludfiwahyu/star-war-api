@@ -8,7 +8,7 @@ export default function Film() {
   const { id } = useParams();
   const dispatch = useDispatch();
   const { filmDetail, loading } = useSelector((state) => state.starWars);
-  console.log(filmDetail);
+  console.log(filmDetail, loading);
 
   useEffect(() => {
     dispatch(fetchFilmDetail(id));
@@ -95,7 +95,7 @@ export default function Film() {
                     </tr>
                   </thead>
                   <tbody>
-                    {filmDetail.characters.map((character, index) => {
+                    { filmDetail.characters?.map((character, index) => {
                       return (
                         <tr key={index}>
                           <td>{character}</td>
@@ -113,5 +113,5 @@ export default function Film() {
         </div>
       )}
     </div>
-  );
+  )
 }

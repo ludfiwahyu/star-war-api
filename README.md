@@ -1,3 +1,16 @@
+# Star Wars API
+
+To run tests, run the following command
+
+```bash
+    Clone this code
+    Running Client with bash
+    npm install
+    npm run start
+```
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
